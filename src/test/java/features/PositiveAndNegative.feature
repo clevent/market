@@ -16,10 +16,11 @@ Feature: positive and negative scenarios for User and Book methods
       And print response
       Examples:
         | userId          |
-        |                 |
         |pepe@pepe.pe1-0.1|
         | aabbcc          |
         |  123            |
+      # this empty data is optional for another negatif scenario
+      # |                 |
 
   Scenario Outline: GET booking info
 
@@ -33,8 +34,9 @@ Feature: positive and negative scenarios for User and Book methods
     And print response
     Examples:
       | id                 | date       |
-      |                    |            |
       | pepe@pepe.pe1-0.1  |            |
       |                    | 2020-12-12 |
       |  aaa               | 2020-10-10 |
       |  123               | 2020-05-05 |
+     # this empty data is optional for another negatif scenario
+     #|                    |            |
