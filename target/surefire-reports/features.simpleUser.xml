@@ -1,0 +1,15 @@
+<testsuite failures="0" name="features/simpleUser.feature" skipped="0" tests="1" time="0.055757">
+  <testcase classname="features.simpleUser" name="Create a new user from CSV file" time="0.055757">
+    <system-out>* def userUrl = 'http://127.0.0.1:8900/user' .............................. passed
+Given url userUrl ......................................................... passed
+And header Accept = 'application/json' .................................... passed
+And header Content-Type = 'application/json' .............................. passed
+And request ............................................................... passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+And print response.email .................................................. passed
+And match response.email == 'german@karate.com' ........................... passed
+And print response.name ................................................... passed
+And match response.name == 'German' ....................................... passed</system-out>
+  </testcase>
+</testsuite>

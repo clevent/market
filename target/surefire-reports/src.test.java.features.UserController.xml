@@ -1,0 +1,16 @@
+<testsuite failures="0" name="src/test/java/features/UserController.feature" skipped="0" tests="1" time="2.8872">
+  <testcase classname="src.test.java.features.UserController" name="Call new user info from another feature file and verify results" time="2.8872">
+    <system-out>* def userUrl = 'http://127.0.0.1:8900/user' .............................. passed
+* def headers = { Accept : 'application/json', Content-Type : 'application/json' } . passed
+* def myres = call read('NewUser.feature') ................................ passed
+* def response = myres.response ........................................... passed
+* def lastId = myres.response.id .......................................... passed
+Given url userUrl ......................................................... passed
+And param id = lastId ..................................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And print response.email .................................................. passed
+And print response.name ................................................... passed
+And print lastId .......................................................... passed</system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,32 @@
+<testsuite failures="1" name="src/test/java/features/JsonSchemaValidation.feature" skipped="0" tests="1" time="1.657141">
+  <testcase classname="src.test.java.features.JsonSchemaValidation" name="get single user and make validation" time="1.657141">
+    <failure message="JsonSchemaValidation.feature:14 - evaluation (js) failed: exp{&#10;   &quot;email&quot;: &quot;#string&quot;,&#10;   &quot;name&quot;: &quot;#string&quot;,&#10;   &quot;id&quot;: &quot;#string&quot;,&#10;    &quot;bookings&quot;: [&#10;       {&#10;           &quot;idBooking&quot;: &quot;#string&quot;,&#10;           &quot;idUser&quot;: &quot;#string&quot;,&#10;           &quot;origin&quot;: &quot;#string&quot;,&#10;           &quot;destination&quot;: &quot;#string&quot;,&#10;           &quot;date&quot;: &quot;#string&quot;&#10;       }&#10;   ]&#10;    }, javax.script.ScriptException: &lt;eval&gt;:1:3 Expected ; but found {&#13;&#10;exp{&#13;&#10;   ^ in &lt;eval&gt; at line number 1 at column number 3&#10;stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)">* def userUrl = 'http://127.0.0.1:8900/user' .............................. passed
+* def headers = { Accept : 'application/json', Content-Type : 'application/json' } . passed
+* def exp = read('data/singleSchema.json') ................................ passed
+Given url userUrl ......................................................... passed
+And path "/all" ........................................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* match response == exp ................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: JsonSchemaValidation.feature:14 - evaluation (js) failed: exp{
+   "email": "#string",
+   "name": "#string",
+   "id": "#string",
+    "bookings": [
+       {
+           "idBooking": "#string",
+           "idUser": "#string",
+           "origin": "#string",
+           "destination": "#string",
+           "date": "#string"
+       }
+   ]
+    }, javax.script.ScriptException: &lt;eval&gt;:1:3 Expected ; but found {&#13;
+exp{&#13;
+   ^ in &lt;eval&gt; at line number 1 at column number 3
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
+	at ✽.* match response == exp (JsonSchemaValidation.feature:14)</failure>
+  </testcase>
+</testsuite>

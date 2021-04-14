@@ -1,0 +1,26 @@
+<testsuite failures="0" name="src/test/java/features/test.feature" skipped="0" tests="2" time="2.479824">
+  <testcase classname="src.test.java.features.test" name="check database that how many users we have" time="2.271703">
+    <system-out>* def userUrl = 'http://127.0.0.1:8900/user' .............................. passed
+Given url userUrl ......................................................... passed
+And path "/all" ........................................................... passed
+When method get ........................................................... passed
+And print response ........................................................ passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.features.test" name="Create a new user with email and name credentials" time="0.208121">
+    <system-out>* def userUrl = 'http://127.0.0.1:8900/user' .............................. passed
+Given url userUrl ......................................................... passed
+And path "/all" ........................................................... passed
+When method get ........................................................... passed
+And print response ........................................................ passed
+Then status 200 ........................................................... passed
+* def userUrl = 'http://127.0.0.1:8900/user' .............................. passed
+Given url userUrl ......................................................... passed
+And header Accept = 'application/json' .................................... passed
+And header Content-Type = 'application/json' .............................. passed
+And request ............................................................... passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+And print response ........................................................ passed</system-out>
+  </testcase>
+</testsuite>

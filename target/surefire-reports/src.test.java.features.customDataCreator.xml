@@ -1,0 +1,11 @@
+<testsuite failures="0" name="src/test/java/features/CustomDataCreator.feature" skipped="0" tests="1" time="2.428046">
+  <testcase classname="src.test.java.features.CustomDataCreator" name="call Java method" time="2.428046">
+    <system-out>* def myRes = call read('NewUser.feature') ................................ passed
+* def name = myRes.response.name .......................................... passed
+* def email = myRes.response.email ........................................ passed
+* def id = myRes.response.id .............................................. passed
+* def javaDemo = Java.type('utilities.CustomDataFileCreator') ............. passed
+* def result = new javaDemo().fileGen(name,email,id) ...................... passed
+* print 'new customdata.csv file created under project' ................... passed</system-out>
+  </testcase>
+</testsuite>

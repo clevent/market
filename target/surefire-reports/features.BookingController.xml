@@ -1,0 +1,57 @@
+<testsuite failures="0" name="features/BookingController.feature" skipped="0" tests="2" time="0.124942">
+  <testcase classname="features.BookingController" name="create new booking for last created user" time="0.063553">
+    <system-out>* def bookUrl = 'http://127.0.0.1:8900/booking' ........................... passed
+* def myres = call read('newUser.feature') ................................ passed
+* def lastId = myres.response.id .......................................... passed
+Given url bookUrl ......................................................... passed
+And header Accept = 'application/json' .................................... passed
+And header Content-Type = 'application/json' .............................. passed
+And request ............................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+Given url bookUrl ......................................................... passed
+And header Accept = 'application/json' .................................... passed
+And header Content-Type = 'application/json' .............................. passed
+And param id = lastId ..................................................... passed
+And param date = '' ....................................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed</system-out>
+  </testcase>
+  <testcase classname="features.BookingController" name="create new booking for last created user" time="0.061389">
+    <system-out>* def bookUrl = 'http://127.0.0.1:8900/booking' ........................... passed
+* def myres = call read('newUser.feature') ................................ passed
+* def lastId = myres.response.id .......................................... passed
+Given url bookUrl ......................................................... passed
+And header Accept = 'application/json' .................................... passed
+And header Content-Type = 'application/json' .............................. passed
+And request ............................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+Given url bookUrl ......................................................... passed
+And header Accept = 'application/json' .................................... passed
+And header Content-Type = 'application/json' .............................. passed
+And param id = lastId ..................................................... passed
+And param date = '' ....................................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* def bookUrl = 'http://127.0.0.1:8900/booking' ........................... passed
+* def myres = call read('newUser.feature') ................................ passed
+* def lastId = myres.response.id .......................................... passed
+Given url bookUrl ......................................................... passed
+And header Accept = 'application/json' .................................... passed
+And header Content-Type = 'application/json' .............................. passed
+And request ............................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+Given url bookUrl ......................................................... passed
+And header Accept = 'application/json' .................................... passed
+And header Content-Type = 'application/json' .............................. passed
+And param id = lastId ..................................................... passed
+And param date = '' ....................................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed</system-out>
+  </testcase>
+</testsuite>

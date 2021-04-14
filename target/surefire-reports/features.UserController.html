@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>features.UserController</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">2</div>
+            
+<div class="bg-danger" id="nav-fail">0</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2021-04-12 09:49:00 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1:9]">[1:9] check database that how many users we have at the beginning </a>
+</div>
+<div class="nav-item passed">
+<a href="#[2:17]">[2:17] Call new user info from another feature file and verify results </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">features/UserController.feature</span><span class="feature-description">User Controller Tests</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:9]">
+<div class="heading-container">
+<div class="scenario-tags">
+<a class="badge badge-primary" href="karate-tags.html">wip</a>
+</div>
+<span class="scenario-keyword">Scenario: [1:9]</span><span class="scenario-name">check database that how many users we have at the beginning </span>
+</div>
+<div class="scenario-time passed">ms: 28</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1:9]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">* def userUrl = 'http://127.0.0.1:8900/user'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="1">21:49:00.651 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="step-row">
+<div class="step-container" id="2">
+<div class="step-ref passed">2</div>
+<div class="step-cell passed">Given url userUrl</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="3">
+<div class="step-ref passed">3</div>
+<div class="step-cell passed">And path "/all"</div>
+</div>
+<div class="time-cell passed">6</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="4">
+<div class="step-ref passed">4</div>
+<div class="step-cell passed">When method get</div>
+</div>
+<div class="time-cell passed">20</div>
+</div>
+<div class="preformatted" data-parent="4">21:49:00.660 request:
+1 &gt; GET http://127.0.0.1:8900/user/all
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: 127.0.0.1:8900
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_281)
+
+21:49:00.678 response time in milliseconds: 15.72
+1 &lt; 200
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Date: Mon, 12 Apr 2021 19:49:00 GMT
+1 &lt; Transfer-Encoding: chunked
+[{"email":"pepe@pepe.pe1","name":"pepe","id":"pepe@pepe.pe1-0.1","bookings":[]},{"email":"pepe@pepe.pe2","name":"pepe","id":"pepe@pepe.pe1-0.2","bookings":[]},{"email":"Jaime@jaime.ja1","name":"Jaime","id":"Jaime@jaime.ja1-0.5801834417773066","bookings":[]},{"email":"Jimmie@jimmie.ji1","name":"Jimmie","id":"Jimmie@jimmie.ji1-0.0762461796465903","bookings":[]},{"email":"Fidel@fidel.fi1","name":"Fidel","id":"Fidel@fidel.fi1-0.9563724159231748","bookings":[{"idBooking":"JFK-MAD-0.9286137622064207","idUser":"Fidel@fidel.fi1-0.9563724159231748","origin":"JFK","destination":"MAD","date":"2021-05-25"},{"idBooking":"MAD-JFK-0.4659572816720513","idUser":"Fidel@fidel.fi1-0.9563724159231748","origin":"MAD","destination":"JFK","date":"2021-05-15"}]},{"email":"Elvera@elvera.el1","name":"Elvera","id":"Elvera@elvera.el1-0.662559217936996","bookings":[{"idBooking":"MAD-JFK-0.8149881238417543","idUser":"Elvera@elvera.el1-0.662559217936996","origin":"MAD","destination":"JFK","date":"2021-05-15"},{"idBooking":"JFK-MAD-0.948095316747056","idUser":"Elvera@elvera.el1-0.662559217936996","origin":"JFK","destination":"MAD","date":"2021-05-25"}]},{"email":"Antonio@antonio.an1","name":"Antonio","id":"Antonio@antonio.an1-0.6073057726696331","bookings":[]},{"email":"Ramiro@ramiro.ra1","name":"Ramiro","id":"Ramiro@ramiro.ra1-0.9778002246068846","bookings":[]},{"email":"german@karate.com","name":"German","id":"german@karate.com-0.7989590221491606","bookings":[]},{"email":"Waldo@waldo.wa1","name":"Waldo","id":"Waldo@waldo.wa1-0.11536358982628747","bookings":[]},{"email":"Tyler@tyler.ty1","name":"Tyler","id":"Tyler@tyler.ty1-0.8190513581698555","bookings":[{"idBooking":"MAD-JFK-0.15616483587716146","idUser":"Tyler@tyler.ty1-0.8190513581698555","origin":"MAD","destination":"JFK","date":"2021-05-15"},{"idBooking":"JFK-MAD-0.4988305596634559","idUser":"Tyler@tyler.ty1-0.8190513581698555","origin":"JFK","destination":"MAD","date":"2021-05-25"}]}]</div>
+<div class="step-row">
+<div class="step-container" id="5">
+<div class="step-ref passed">5</div>
+<div class="step-cell passed">And print response</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="5">21:49:00.681 [print] [
+  {
+    "name": "pepe",
+    "id": "pepe@pepe.pe1-0.1",
+    "bookings": [
+    ],
+    "email": "pepe@pepe.pe1"
+  },
+  {
+    "name": "pepe",
+    "id": "pepe@pepe.pe1-0.2",
+    "bookings": [
+    ],
+    "email": "pepe@pepe.pe2"
+  },
+  {
+    "name": "Jaime",
+    "id": "Jaime@jaime.ja1-0.5801834417773066",
+    "bookings": [
+    ],
+    "email": "Jaime@jaime.ja1"
+  },
+  {
+    "name": "Jimmie",
+    "id": "Jimmie@jimmie.ji1-0.0762461796465903",
+    "bookings": [
+    ],
+    "email": "Jimmie@jimmie.ji1"
+  },
+  {
+    "name": "Fidel",
+    "id": "Fidel@fidel.fi1-0.9563724159231748",
+    "bookings": [
+      {
+        "idUser": "Fidel@fidel.fi1-0.9563724159231748",
+        "date": "2021-05-25",
+        "idBooking": "JFK-MAD-0.9286137622064207",
+        "origin": "JFK",
+        "destination": "MAD"
+      },
+      {
+        "idUser": "Fidel@fidel.fi1-0.9563724159231748",
+        "date": "2021-05-15",
+        "idBooking": "MAD-JFK-0.4659572816720513",
+        "origin": "MAD",
+        "destination": "JFK"
+      }
+    ],
+    "email": "Fidel@fidel.fi1"
+  },
+  {
+    "name": "Elvera",
+    "id": "Elvera@elvera.el1-0.662559217936996",
+    "bookings": [
+      {
+        "idUser": "Elvera@elvera.el1-0.662559217936996",
+        "date": "2021-05-15",
+        "idBooking": "MAD-JFK-0.8149881238417543",
+        "origin": "MAD",
+        "destination": "JFK"
+      },
+      {
+        "idUser": "Elvera@elvera.el1-0.662559217936996",
+        "date": "2021-05-25",
+        "idBooking": "JFK-MAD-0.948095316747056",
+        "origin": "JFK",
+        "destination": "MAD"
+      }
+    ],
+    "email": "Elvera@elvera.el1"
+  },
+  {
+    "name": "Antonio",
+    "id": "Antonio@antonio.an1-0.6073057726696331",
+    "bookings": [
+    ],
+    "email": "Antonio@antonio.an1"
+  },
+  {
+    "name": "Ramiro",
+    "id": "Ramiro@ramiro.ra1-0.9778002246068846",
+    "bookings": [
+    ],
+    "email": "Ramiro@ramiro.ra1"
+  },
+  {
+    "name": "German",
+    "id": "german@karate.com-0.7989590221491606",
+    "bookings": [
+    ],
+    "email": "german@karate.com"
+  },
+  {
+    "name": "Waldo",
+    "id": "Waldo@waldo.wa1-0.11536358982628747",
+    "bookings": [
+    ],
+    "email": "Waldo@waldo.wa1"
+  },
+  {
+    "name": "Tyler",
+    "id": "Tyler@tyler.ty1-0.8190513581698555",
+    "bookings": [
+      {
+        "idUser": "Tyler@tyler.ty1-0.8190513581698555",
+        "date": "2021-05-15",
+        "idBooking": "MAD-JFK-0.15616483587716146",
+        "origin": "MAD",
+        "destination": "JFK"
+      },
+      {
+        "idUser": "Tyler@tyler.ty1-0.8190513581698555",
+        "date": "2021-05-25",
+        "idBooking": "JFK-MAD-0.4988305596634559",
+        "origin": "JFK",
+        "destination": "MAD"
+      }
+    ],
+    "email": "Tyler@tyler.ty1"
+  }
+]</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref passed">6</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[2:17]">
+<div class="heading-container">
+<div class="scenario-tags">
+<a class="badge badge-primary" href="karate-tags.html">wip</a>
+</div>
+<span class="scenario-keyword">Scenario: [2:17]</span><span class="scenario-name">Call new user info from another feature file and verify results </span>
+</div>
+<div class="scenario-time passed">ms: 224</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[2:17]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[2:17]bg">
+<div class="step-container" id="7">
+<div class="step-ref bg-step">7</div>
+<div class="step-cell passed">* def userUrl = 'http://127.0.0.1:8900/user'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="7">21:49:00.692 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="step-row">
+<div class="step-container">
+<div class="step-ref passed"></div>
+<div class="step-cell comment">#    this is a option for using CSV file for new user(s)</div>
+</div>
+<div class="time-cell comment"></div>
+</div>
+<div class="step-row">
+<div class="step-container">
+<div class="step-ref passed"></div>
+<div class="step-cell comment">#   * def myres = call read('simpleUser.feature')</div>
+</div>
+<div class="time-cell comment"></div>
+</div>
+<div class="step-row">
+<div class="step-container" id="8">
+<div class="step-ref passed">8</div>
+<div class="step-cell passed">* def myres = call read('newUser.feature')</div>
+</div>
+<div class="time-cell passed">196</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="8.1">
+<div class="step-ref passed">&gt;&gt;</div>
+<div class="step-cell passed">features/newUser.feature</div>
+</div>
+<div class="time-cell passed">182</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="9">
+<div class="step-ref passed">9</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def userUrl = 'http://127.0.0.1:8900/user'</div>
+</div>
+<div class="time-cell passed">7</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="10">
+<div class="step-ref passed">10</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def NUG = Java.type('utilities.NewUserGenerator')</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="11">
+<div class="step-ref passed">11</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def nugUser = NUG.createNewUser()</div>
+</div>
+<div class="time-cell passed">152</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="12">
+<div class="step-ref passed">12</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given url userUrl</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="13">
+<div class="step-ref passed">13</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And header Accept = 'application/json'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="14">
+<div class="step-ref passed">14</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And header Content-Type = 'application/json'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="15">
+<div class="step-ref passed">15</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And request nugUser</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="16">
+<div class="step-ref passed">16</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method POST</div>
+</div>
+<div class="time-cell passed">19</div>
+</div>
+<div class="preformatted" data-parent="16">21:49:00.871 request:
+1 &gt; POST http://127.0.0.1:8900/user
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 48
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: 127.0.0.1:8900
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_281)
+{"name":"Barbara","email":"Barbara@barbara.ba1"}
+
+21:49:00.884 response time in milliseconds: 11.27
+1 &lt; 201
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Date: Mon, 12 Apr 2021 19:49:00 GMT
+1 &lt; Transfer-Encoding: chunked
+{"email":"Barbara@barbara.ba1","name":"Barbara","id":"Barbara@barbara.ba1-0.8485296093890101","bookings":[]}</div>
+<div class="step-row">
+<div class="step-container" id="17">
+<div class="step-ref passed">17</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 201</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="18">
+<div class="step-ref passed">18</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And match response.email == nugUser.email</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="19">
+<div class="step-ref passed">19</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And match response.name == nugUser.name</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="20">
+<div class="step-ref passed">20</div>
+<div class="step-cell passed">* def response = myres.response</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="21">
+<div class="step-ref passed">21</div>
+<div class="step-cell passed">* def lastId = myres.response.id</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="22">
+<div class="step-ref passed">22</div>
+<div class="step-cell passed">Given url userUrl</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="23">
+<div class="step-ref passed">23</div>
+<div class="step-cell passed">And header Accept = 'application/json'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="24">
+<div class="step-ref passed">24</div>
+<div class="step-cell passed">And header Content-Type = 'application/json'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="25">
+<div class="step-ref passed">25</div>
+<div class="step-cell passed">And param id = lastId</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="26">
+<div class="step-ref passed">26</div>
+<div class="step-cell passed">When method get</div>
+</div>
+<div class="time-cell passed">14</div>
+</div>
+<div class="preformatted" data-parent="26">21:49:00.895 request:
+1 &gt; GET http://127.0.0.1:8900/user?id=Barbara%40barbara.ba1-0.8485296093890101
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Type: application/json
+1 &gt; Host: 127.0.0.1:8900
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_281)
+
+21:49:00.907 response time in milliseconds: 8.66
+1 &lt; 200
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Date: Mon, 12 Apr 2021 19:49:00 GMT
+1 &lt; Transfer-Encoding: chunked
+{"email":"Barbara@barbara.ba1","name":"Barbara","id":"Barbara@barbara.ba1-0.8485296093890101","bookings":[]}</div>
+<div class="step-row">
+<div class="step-container" id="27">
+<div class="step-ref passed">27</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="28">
+<div class="step-ref passed">28</div>
+<div class="step-cell passed">And print response.email</div>
+</div>
+<div class="time-cell passed">5</div>
+</div>
+<div class="preformatted" data-parent="28">21:49:00.912 [print] Barbara@barbara.ba1</div>
+<div class="step-row">
+<div class="step-container" id="29">
+<div class="step-ref passed">29</div>
+<div class="step-cell passed">And print response.name</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="preformatted" data-parent="29">21:49:00.917 [print] Barbara</div>
+<div class="step-row">
+<div class="step-container" id="30">
+<div class="step-ref passed">30</div>
+<div class="step-cell passed">And print lastId</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="30">21:49:00.917 [print] Barbara@barbara.ba1-0.8485296093890101</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

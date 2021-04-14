@@ -1,0 +1,20 @@
+<testsuite failures="0" name="src/test/java/features/fakeUser.feature" skipped="0" tests="1" time="1.725112">
+  <testcase classname="src.test.java.features.fakeUser" name="Create a new user with Random Data (JAVA)" time="1.725112">
+    <system-out>* def userUrl = 'http://127.0.0.1:8900/user' .............................. passed
+* def NUG = Java.type('utilities.NewUserGenerator') ....................... passed
+* def nugUser = NUG.createNewUser() ....................................... passed
+Given url userUrl ......................................................... passed
+And header Accept = 'application/json' .................................... passed
+And header Content-Type = 'application/json' .............................. passed
+And request nugUser ....................................................... passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+And print '__________________**********************____________________' .. passed
+And print response ........................................................ passed
+And print response.id ..................................................... passed
+And print response.email .................................................. passed
+And match response.email == nugUser.email ................................. passed
+And print response.name ................................................... passed
+And match response.name == nugUser.name ................................... passed</system-out>
+  </testcase>
+</testsuite>
